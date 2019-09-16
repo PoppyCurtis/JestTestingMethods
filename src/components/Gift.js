@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Form, FormGroup, ControlLabel, Button, FormControl } from 'react-bootstrap';
 
 class Gift extends Component {
 
@@ -11,7 +12,16 @@ class Gift extends Component {
     }
     render () {
         return (
-            <div></div>
+            <div>
+                <Form>
+                    <FormGroup>
+                        <ControlLabel>Person</ControlLabel>
+                        <FormControl 
+                        onChange={event => this.setState({person: event.target.value})}
+                        className="input-person"/>
+                    </FormGroup>
+                </Form>
+            </div>
         );
     }
 }
