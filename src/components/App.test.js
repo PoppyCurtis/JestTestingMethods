@@ -45,7 +45,6 @@ describe('App', () => {
                 expect(app.state().gifts).toEqual([]);
             });
         });
-    })
-   
+    });
 });
 
